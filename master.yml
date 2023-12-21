@@ -1,0 +1,14 @@
+---
+- hosts: ubuntu
+  become: true
+  tasks:
+    - name: install apache2 package
+      apt: name=apache2 state=present
+    - name: install mysql-server package
+      apt: name=mysql-server state=absent
+    - name: start apache service
+      service: name=apache2 state=started
+    - name: remove default index.html
+      file: dest=/var/www/html/index.html state=absent
+    - name: copy custom index.html file
+      copy: content="Hello folks" dest=/var/www/html/index.html
