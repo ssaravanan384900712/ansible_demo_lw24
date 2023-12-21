@@ -1,0 +1,9 @@
+[linux]
+172.190.168.193 ansible_connection=ssh ansible_ssh_user=azureuser ansible_ssh_pass=secretPassword123123
+172.190.171.51 ansible_connection=ssh ansible_ssh_user=azureuser ansible_ssh_pass=secretPassword123123
+
+[centos]
+172.190.168.193 ansible_connection=ssh ansible_ssh_user=azureuser ansible_ssh_pass=secretPassword123123
+
+[ubuntu]
+23.101.143.122 ansible_connection=ssh ansible_ssh_user=saravanans ansible_ssh_pass=Redhat007123123
