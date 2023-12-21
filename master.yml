@@ -11,4 +11,4 @@
     - name: remove default index.html
       file: dest=/var/www/html/index.html state=absent
     - name: copy custom index.html file
-      copy: content="Hello folks" dest=/var/www/html/index.html
+      copy: content="Hello Light n Wonder  folks" dest=/var/www/html/index.html
